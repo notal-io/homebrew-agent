@@ -5,20 +5,20 @@
 class NotalRouter < Formula
   desc "Notal router executor"
   homepage "https://notal.io"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neidigital/notal/releases/download/v0.0.3/notal-router_0.0.3_darwin_amd64.tar.gz"
-      sha256 "32af3e24f3d2feb35f68ac948ea8930999fee74f9c074ccf43d8ebffae2945d5"
+      url "https://github.com/neidigital/notal/releases/download/v0.0.4/notal-router_0.0.4_darwin_amd64.tar.gz"
+      sha256 "e50869fdf5f5edbfde0b1aa39a9cf2f58f8d6a1a92a1323b5c1bb9dd9a1c8adc"
 
       define_method(:install) do
         bin.install "notal-router"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neidigital/notal/releases/download/v0.0.3/notal-router_0.0.3_darwin_arm64.tar.gz"
-      sha256 "0dc364721c7fc4fd42d2ac4380dfde3ea90f185204ca0fa48068da1b75b0148a"
+      url "https://github.com/neidigital/notal/releases/download/v0.0.4/notal-router_0.0.4_darwin_arm64.tar.gz"
+      sha256 "a2ae6bd0f5a07e6d1096c2a6d2e9aa0ae201e6b98086336f98c9c44a69c5244d"
 
       define_method(:install) do
         bin.install "notal-router"
@@ -28,15 +28,15 @@ class NotalRouter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neidigital/notal/releases/download/v0.0.3/notal-router_0.0.3_linux_amd64.tar.gz"
-      sha256 "9a7f33709e4eb4eacd15349d8b6fce344c3858a646613528c311b344f0b12182"
+      url "https://github.com/neidigital/notal/releases/download/v0.0.4/notal-router_0.0.4_linux_amd64.tar.gz"
+      sha256 "ba03837feb1d0934cfa040112579ad73530809a2b7704571da25d2db70a6cd31"
       define_method(:install) do
         bin.install "notal-router"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neidigital/notal/releases/download/v0.0.3/notal-router_0.0.3_linux_arm64.tar.gz"
-      sha256 "143537c1e83b5bc7ad963a52ef58a85a6ba4896713f134a77a2ac4a90973225c"
+      url "https://github.com/neidigital/notal/releases/download/v0.0.4/notal-router_0.0.4_linux_arm64.tar.gz"
+      sha256 "3c54a882abdfb9b6cb103ebdab7c0b748c91b00adf7a89afa11d3a6bc70185e1"
       define_method(:install) do
         bin.install "notal-router"
       end
